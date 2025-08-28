@@ -1,0 +1,28 @@
+package com.enigma.library_app.dto.member.response;
+
+import com.enigma.library_app.auth.constant.Role;
+import com.enigma.library_app.model.master.member.enumeration.Status;
+import com.enigma.library_app.model.master.member.enumeration.Type;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import lombok.*;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
+public class MemberResponse {
+	private String id;
+	private String username;
+	private String name;
+	private String nisNip;
+	private String email;
+	private String phone;
+	private String telegramId; // sekalian masukin telegramId
+	private String facultyCode;    // masukin ini juga sekalian
+	private Type type;
+	private Status status;
+	private String photo;
+
+}
