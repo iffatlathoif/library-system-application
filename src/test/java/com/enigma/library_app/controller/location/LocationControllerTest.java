@@ -1,11 +1,10 @@
 package com.enigma.library_app.controller.location;
 
-import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.controller.constants.Constants;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.util.TestUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.cdimascio.dotenv.Dotenv;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -35,12 +34,6 @@ class LocationControllerTest {
 	private JwtService jwtService;
 	private static String token;
 	private static String locationId;
-
-	@BeforeAll
-	static void beforeAll() {
-		Dotenv dotenv = Dotenv.load();
-		dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
-	}
 
 	@BeforeEach
 	void setUp() {

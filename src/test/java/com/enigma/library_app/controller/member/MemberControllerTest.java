@@ -1,10 +1,8 @@
 package com.enigma.library_app.controller.member;
 
-import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.model.Faculty;
 import com.enigma.library_app.repository.FacultyRepository;
-import com.enigma.library_app.repository.MemberRepository;
-import com.enigma.library_app.repository.UserRepository;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.util.TestUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,7 +14,6 @@ import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.test.web.servlet.MockMvc;
 
-
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -25,11 +22,10 @@ import java.util.List;
 import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.multipart;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -43,12 +39,6 @@ class MemberControllerTest {
 
     @Autowired
     private JwtService jwtService;
-
-    @Autowired
-    private MemberRepository memberRepository;
-
-    @Autowired
-    private UserRepository userRepository;
 
     @Autowired
     private FacultyRepository facultyRepository;

@@ -1,12 +1,12 @@
 package com.enigma.library_app.controller.faculty;
-import com.enigma.library_app.service.JwtService;
+
 import com.enigma.library_app.dto.BaseResponse;
 import com.enigma.library_app.model.Faculty;
 import com.enigma.library_app.repository.FacultyRepository;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.util.TestUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.cdimascio.dotenv.Dotenv;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -18,10 +18,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @SpringBootTest
 @AutoConfigureMockMvc
@@ -46,8 +47,6 @@ class FacultyControllerTest {
 
     @BeforeAll
     static void beforeAll() {
-        Dotenv dotenv = Dotenv.load();
-        dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
         facultyCode = "EE"; // ganti kode agar tidak bentrok dengan data CS yang sudah ada
     }
 

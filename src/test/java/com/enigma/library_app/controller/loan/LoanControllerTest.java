@@ -1,10 +1,9 @@
 package com.enigma.library_app.controller.loan;
 
+import com.enigma.library_app.enumeration.LoanStatus;
 import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.util.TestUtil;
-import com.enigma.library_app.enumeration.LoanStatus;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.cdimascio.dotenv.Dotenv;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.*;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -41,19 +40,11 @@ class LoanControllerTest {
     private static String adminToken;
     private static String loanIdByStaff;
     private static String loanIdByMember;
-    private static String loanId;
     private static String memberId;
     private static String bookId1;
-    private static Long copyId1;
     private static String bookId2;
     private static Long copyId2;
     private static Long locationId;
-
-    @BeforeAll
-    static void beforeAll() {
-        Dotenv dotenv = Dotenv.load();
-        dotenv.entries().forEach(entry -> System.setProperty(entry.getKey(), entry.getValue()));
-    }
 
     @BeforeEach
     void setUp() {
