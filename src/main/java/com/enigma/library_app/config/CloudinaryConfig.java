@@ -2,17 +2,26 @@ package com.enigma.library_app.config;
 
 import com.cloudinary.Cloudinary;
 import com.cloudinary.utils.ObjectUtils;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class CloudinaryConfig {
+
+    @Value("${cloudinary.name}")
+    private String cloudName;
+    @Value("${cloudinary.key}")
+    private String apiKey;
+    @Value("${cloudinary.secret}")
+    private String apiSecret;
+
     @Bean
     public Cloudinary cloudinary() {
         return new Cloudinary(ObjectUtils.asMap(
-                "cloud_name", "dlg2zlwbo",
-                "api_key", "797578554935497",
-                "api_secret", "x1m99lIVKG6t-gBakJDx1dkJ7aM"
+                "cloud_name", cloudName,
+                "api_key", apiKey,
+                "api_secret", apiSecret
         ));
     }
 }
