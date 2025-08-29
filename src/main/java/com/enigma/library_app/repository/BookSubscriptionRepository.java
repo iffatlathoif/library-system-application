@@ -1,7 +1,7 @@
 package com.enigma.library_app.repository;
-import com.enigma.library_app.model.master.book.entity.Book;
-import com.enigma.library_app.model.master.book.entity.BookSubscription;
-import com.enigma.library_app.model.master.member.entity.Member;
+import com.enigma.library_app.model.Book;
+import com.enigma.library_app.model.BookSubscription;
+import com.enigma.library_app.model.Member;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,6 @@
 package com.enigma.library_app.util;
 
-import com.enigma.library_app.auth.security.UserInfoDetails;
+import com.enigma.library_app.model.UserInfoDetails;
 import org.springframework.security.core.Authentication;
 
 

@@ -1,25 +1,21 @@
 package com.enigma.library_app.service.impl.book;
 
-import com.enigma.library_app.auth.entity.User;
-import com.enigma.library_app.model.master.book.entity.Book;
-import com.enigma.library_app.model.master.book.entity.BookReview;
-import com.enigma.library_app.model.master.member.entity.Member;
+import com.enigma.library_app.model.User;
+import com.enigma.library_app.model.Book;
+import com.enigma.library_app.model.BookReview;
+import com.enigma.library_app.model.Member;
 import com.enigma.library_app.repository.BookRepository;
 import com.enigma.library_app.repository.BookReviewRepository;
+import com.enigma.library_app.service.impl.BookReviewServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageImpl;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.Collections;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;

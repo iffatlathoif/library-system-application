@@ -1,7 +1,7 @@
 package com.enigma.library_app.controller.faculty;
-import com.enigma.library_app.auth.security.JwtService;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.dto.BaseResponse;
-import com.enigma.library_app.model.master.location.entity.Faculty;
+import com.enigma.library_app.model.Faculty;
 import com.enigma.library_app.repository.FacultyRepository;
 import com.enigma.library_app.util.TestUtil;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -23,7 +23,6 @@ import static org.springframework.http.HttpHeaders.AUTHORIZATION;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
-import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @AutoConfigureMockMvc
 @TestMethodOrder(MethodOrderer.OrderAnnotation.class)

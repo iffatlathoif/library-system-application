@@ -1,7 +1,7 @@
 package com.enigma.library_app.controller.member;
 
-import com.enigma.library_app.auth.security.JwtService;
-import com.enigma.library_app.model.master.location.entity.Faculty;
+import com.enigma.library_app.service.JwtService;
+import com.enigma.library_app.model.Faculty;
 import com.enigma.library_app.repository.FacultyRepository;
 import com.enigma.library_app.repository.MemberRepository;
 import com.enigma.library_app.repository.UserRepository;
@@ -14,7 +14,6 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.mock.web.MockMultipartFile;
-import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
 
 

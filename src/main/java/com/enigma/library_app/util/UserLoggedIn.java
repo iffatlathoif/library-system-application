@@ -1,7 +1,7 @@
 package com.enigma.library_app.util;
 
-import com.enigma.library_app.auth.entity.User;
-import com.enigma.library_app.auth.service.UserService;
+import com.enigma.library_app.model.User;
+import com.enigma.library_app.service.UserService;
 import com.enigma.library_app.exception.ApiException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;

@@ -1,6 +1,6 @@
 package com.enigma.library_app.controller;
 
-import com.enigma.library_app.service.contract.fine.FineService;
+import com.enigma.library_app.service.FineService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

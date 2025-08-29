@@ -1,11 +1,7 @@
 package com.enigma.library_app.dto.member.response;
 
-import com.enigma.library_app.auth.constant.Role;
-import com.enigma.library_app.model.master.member.enumeration.Status;
-import com.enigma.library_app.model.master.member.enumeration.Type;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import com.enigma.library_app.enumeration.Status;
+import com.enigma.library_app.enumeration.Type;
 import lombok.*;
 
 @Data

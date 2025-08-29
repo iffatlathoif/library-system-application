@@ -1,7 +1,7 @@
 package com.enigma.library_app.mapper;
 
 import com.enigma.library_app.dto.copy.response.CopyResponse;
-import com.enigma.library_app.model.master.book.entity.Copy;
+import com.enigma.library_app.model.Copy;
 
 import java.util.List;
 

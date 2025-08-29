@@ -1,6 +1,6 @@
 package com.enigma.library_app.dto.auth.request;
 
-import com.enigma.library_app.auth.constant.Role;
+import com.enigma.library_app.enumeration.Role;
 import jakarta.persistence.Column;
 import lombok.*;
 

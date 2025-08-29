@@ -1,8 +1,8 @@
 package com.enigma.library_app.dto.member.request;
 
-import com.enigma.library_app.auth.constant.Role;
-import com.enigma.library_app.model.master.member.enumeration.Status;
-import com.enigma.library_app.model.master.member.enumeration.Type;
+import com.enigma.library_app.enumeration.Role;
+import com.enigma.library_app.enumeration.Status;
+import com.enigma.library_app.enumeration.Type;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

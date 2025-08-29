@@ -1,27 +1,27 @@
 package com.enigma.library_app.handlers;
 
-import com.enigma.library_app.auth.entity.User;
-import com.enigma.library_app.constan.ConversationFlowState;
+import com.enigma.library_app.model.User;
+import com.enigma.library_app.enumeration.ConversationFlowState;
 import com.enigma.library_app.dto.state.UserState;
-import com.enigma.library_app.model.master.book.entity.Book;
-import com.enigma.library_app.model.master.book.entity.BookReview;
-import com.enigma.library_app.model.master.member.entity.TelegramUser;
-import com.enigma.library_app.model.transaction.fine.entity.Fine;
-import com.enigma.library_app.model.transaction.fine.entity.FinePrice;
-import com.enigma.library_app.model.transaction.fine.enumeration.PaymentMethod;
-import com.enigma.library_app.model.transaction.fine.enumeration.PaymentStatus;
-import com.enigma.library_app.model.transaction.loan.entity.Loan;
+import com.enigma.library_app.model.Book;
+import com.enigma.library_app.model.BookReview;
+import com.enigma.library_app.model.TelegramUser;
+import com.enigma.library_app.model.Fine;
+import com.enigma.library_app.model.FinePrice;
+import com.enigma.library_app.enumeration.PaymentMethod;
+import com.enigma.library_app.enumeration.PaymentStatus;
+import com.enigma.library_app.model.Loan;
 import com.enigma.library_app.repository.FinePriceRepository;
 import com.enigma.library_app.repository.FineRepository;
 import com.enigma.library_app.repository.TelegramUserRepository;
-import com.enigma.library_app.service.contract.book.BookReviewService;
-import com.enigma.library_app.service.contract.book.BookService;
-import com.enigma.library_app.service.contract.loan.LoanService;
-import com.enigma.library_app.service.contract.otp.OtpService;
-import com.enigma.library_app.service.contract.payment.PaymentService;
-import com.enigma.library_app.service.contract.wishlist.SubscriptionService;
-import com.enigma.library_app.service.impl.telegram.ConversationStateService;
-import com.enigma.library_app.service.impl.telegram.MessageBuilderService;
+import com.enigma.library_app.service.BookReviewService;
+import com.enigma.library_app.service.BookService;
+import com.enigma.library_app.service.LoanService;
+import com.enigma.library_app.service.OtpService;
+import com.enigma.library_app.service.PaymentService;
+import com.enigma.library_app.service.SubscriptionService;
+import com.enigma.library_app.service.impl.ConversationStateService;
+import com.enigma.library_app.service.impl.MessageBuilderService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Page;
@@ -47,7 +47,6 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 
 @Component
 @RequiredArgsConstructor

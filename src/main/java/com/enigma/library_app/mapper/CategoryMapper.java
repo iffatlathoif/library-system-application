@@ -1,8 +1,8 @@
 package com.enigma.library_app.mapper;
 
 import com.enigma.library_app.dto.book.response.CategoryResponse;
-import com.enigma.library_app.model.master.book.entity.Book;
-import com.enigma.library_app.model.master.book.entity.Category;
+import com.enigma.library_app.model.Book;
+import com.enigma.library_app.model.Category;
 
 import java.util.List;
 

@@ -1,7 +1,6 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.master.member.entity.Member;
-import com.enigma.library_app.model.master.member.entity.TelegramUser;
+import com.enigma.library_app.model.TelegramUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

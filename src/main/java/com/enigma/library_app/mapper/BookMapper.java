@@ -3,7 +3,7 @@ package com.enigma.library_app.mapper;
 import com.enigma.library_app.dto.book.request.CreateBookRequest;
 import com.enigma.library_app.dto.book.request.UpdateBookRequest;
 import com.enigma.library_app.dto.book.response.BookResponse;
-import com.enigma.library_app.model.master.book.entity.Book;
+import com.enigma.library_app.model.Book;
 
 import java.util.List;
 

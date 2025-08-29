@@ -1,7 +1,7 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.transaction.loan.entity.Loan;
-import com.enigma.library_app.model.transaction.loan.entity.LoanDetail;
+import com.enigma.library_app.model.Loan;
+import com.enigma.library_app.model.LoanDetail;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;

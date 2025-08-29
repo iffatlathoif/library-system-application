@@ -1,6 +1,6 @@
 package com.enigma.library_app.dto.state;
 
-import com.enigma.library_app.constan.ConversationFlowState;
+import com.enigma.library_app.enumeration.ConversationFlowState;
 
 import java.util.Map;
 

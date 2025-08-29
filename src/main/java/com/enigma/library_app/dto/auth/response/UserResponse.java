@@ -1,6 +1,6 @@
 package com.enigma.library_app.dto.auth.response;
 
-import com.enigma.library_app.auth.constant.Role;
+import com.enigma.library_app.enumeration.Role;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

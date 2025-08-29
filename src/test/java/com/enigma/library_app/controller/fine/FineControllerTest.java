@@ -1,6 +1,6 @@
 package com.enigma.library_app.controller.fine;
 
-import com.enigma.library_app.auth.security.JwtService;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.controller.constants.Constants;
 import com.enigma.library_app.util.TestUtil;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -10,17 +10,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.List;
 import java.util.Map;
 
 import static org.springframework.http.HttpHeaders.AUTHORIZATION;
-import static org.springframework.test.web.servlet.MockMvcBuilder.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest

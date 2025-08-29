@@ -1,7 +1,7 @@
 package com.enigma.library_app.repository;
 
 import com.enigma.library_app.enumeration.StatusCopies;
-import com.enigma.library_app.model.master.book.entity.Copy;
+import com.enigma.library_app.model.Copy;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

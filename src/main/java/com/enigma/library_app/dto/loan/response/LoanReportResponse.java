@@ -1,6 +1,6 @@
 package com.enigma.library_app.dto.loan.response;
 
-import com.enigma.library_app.model.transaction.loan.constant.LoanStatus;
+import com.enigma.library_app.enumeration.LoanStatus;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

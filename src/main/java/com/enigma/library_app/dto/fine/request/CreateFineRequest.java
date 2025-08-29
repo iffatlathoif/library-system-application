@@ -1,6 +1,6 @@
 package com.enigma.library_app.dto.fine.request;
 
-import com.enigma.library_app.model.transaction.fine.enumeration.TypeFine;
+import com.enigma.library_app.enumeration.TypeFine;
 import lombok.*;
 
 @Getter

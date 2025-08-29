@@ -1,8 +1,8 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.transaction.fine.entity.Fine;
-import com.enigma.library_app.model.transaction.fine.enumeration.PaymentMethod;
-import com.enigma.library_app.model.transaction.fine.enumeration.PaymentStatus;
+import com.enigma.library_app.model.Fine;
+import com.enigma.library_app.enumeration.PaymentMethod;
+import com.enigma.library_app.enumeration.PaymentStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 

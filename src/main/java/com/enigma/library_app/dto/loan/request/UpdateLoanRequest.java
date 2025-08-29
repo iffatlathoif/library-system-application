@@ -1,6 +1,6 @@
 package com.enigma.library_app.dto.loan.request;
 
-import com.enigma.library_app.model.transaction.loan.constant.LoanStatus;
+import com.enigma.library_app.enumeration.LoanStatus;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

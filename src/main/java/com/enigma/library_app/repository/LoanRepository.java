@@ -1,9 +1,8 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.master.member.entity.Member;
-import com.enigma.library_app.model.transaction.loan.constant.LoanStatus;
-import com.enigma.library_app.model.transaction.loan.entity.Loan;
-import org.springframework.data.domain.Page;
+import com.enigma.library_app.model.Member;
+import com.enigma.library_app.enumeration.LoanStatus;
+import com.enigma.library_app.model.Loan;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -11,11 +10,9 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
-import org.springframework.data.domain.Pageable;
 
 import java.time.LocalDateTime;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 

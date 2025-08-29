@@ -1,10 +1,7 @@
 package com.enigma.library_app.dto.member.request;
 
-import com.enigma.library_app.auth.constant.Role;
-import com.enigma.library_app.model.master.location.entity.Faculty;
-import com.enigma.library_app.model.master.member.entity.TelegramUser;
-import com.enigma.library_app.model.master.member.enumeration.Status;
-import com.enigma.library_app.model.master.member.enumeration.Type;
+import com.enigma.library_app.enumeration.Role;
+import com.enigma.library_app.enumeration.Type;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

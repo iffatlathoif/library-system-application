@@ -1,7 +1,8 @@
 package com.enigma.library_app.service.impl.auth;
 
-import com.enigma.library_app.auth.entity.User;
+import com.enigma.library_app.model.User;
 import com.enigma.library_app.repository.UserRepository;
+import com.enigma.library_app.service.impl.AuthServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

@@ -1,7 +1,8 @@
 package com.enigma.library_app.service.impl.otp;
 
-import com.enigma.library_app.model.otp.OtpToken;
+import com.enigma.library_app.model.OtpToken;
 import com.enigma.library_app.repository.OtpTokenRepository;
+import com.enigma.library_app.service.impl.OtpValidationServiceImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

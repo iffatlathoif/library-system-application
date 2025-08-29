@@ -1,12 +1,8 @@
 package com.enigma.library_app.controller.loan;
 
-import com.enigma.library_app.auth.security.JwtService;
-import com.enigma.library_app.controller.constants.Constants;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.util.TestUtil;
-import com.enigma.library_app.dto.loan.request.*;
-import com.enigma.library_app.dto.loan.response.LoanResponse;
-import com.enigma.library_app.model.transaction.loan.constant.LoanStatus;
-import com.fasterxml.jackson.core.type.TypeReference;
+import com.enigma.library_app.enumeration.LoanStatus;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.cdimascio.dotenv.Dotenv;
 import lombok.extern.slf4j.Slf4j;
@@ -17,7 +13,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.HashMap;
 import java.util.List;

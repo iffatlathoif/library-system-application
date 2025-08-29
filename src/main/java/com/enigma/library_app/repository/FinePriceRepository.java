@@ -1,6 +1,6 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.transaction.fine.entity.FinePrice;
+import com.enigma.library_app.model.FinePrice;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;

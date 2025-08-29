@@ -1,6 +1,6 @@
 package com.enigma.library_app.controller.fine;
 
-import com.enigma.library_app.auth.security.JwtService;
+import com.enigma.library_app.service.JwtService;
 import com.enigma.library_app.controller.constants.Constants;
 import com.enigma.library_app.util.TestUtil;
 import com.fasterxml.jackson.core.type.TypeReference;

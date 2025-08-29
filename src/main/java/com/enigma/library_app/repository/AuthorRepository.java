@@ -1,6 +1,6 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.master.book.entity.Author;
+import com.enigma.library_app.model.Author;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

@@ -1,6 +1,6 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.otp.OtpToken;
+import com.enigma.library_app.model.OtpToken;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

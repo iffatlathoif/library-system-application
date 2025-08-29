@@ -1,8 +1,8 @@
 package com.enigma.library_app.repository;
 
-import com.enigma.library_app.model.master.book.entity.Book;
-import com.enigma.library_app.model.master.book.entity.BookReview;
-import com.enigma.library_app.model.master.member.entity.Member;
+import com.enigma.library_app.model.Book;
+import com.enigma.library_app.model.BookReview;
+import com.enigma.library_app.model.Member;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
