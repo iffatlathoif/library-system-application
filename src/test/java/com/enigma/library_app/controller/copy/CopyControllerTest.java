@@ -85,7 +85,7 @@ class CopyControllerTest {
 				.andDo(result -> {
 					List<Object> objects = TestUtil.extractDataArray(result, objectMapper);
 					assertFalse(objects.isEmpty());
-					Map<String, Object> copy = (Map<String, Object>) objects.getFirst();
+					Map<String, Object> copy = (Map<String, Object>) objects.get(0);
 					copyId = copy.get("copyId").toString();
 				});
 	}

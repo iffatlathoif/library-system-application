@@ -115,7 +115,7 @@ class BookControllerTest {
 				.andExpectAll(status().isOk())
 				.andDo(result -> {
 					List<Object> objects = TestUtil.extractDataArray(result, objectMapper);
-					Map<String, Object> book = (Map<String, Object>) objects.getFirst();
+					Map<String, Object> book = (Map<String, Object>) objects.get(0);
 					List<Map<String, Object>> categories = (List<Map<String, Object>>) book.get("categories");
 					Integer categoryId = (Integer) categories.get(0).get("categoryId");
 					assertEquals(1, categoryId);

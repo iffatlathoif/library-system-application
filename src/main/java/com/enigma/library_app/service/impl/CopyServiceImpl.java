@@ -52,7 +52,7 @@ public class CopyServiceImpl implements CopyService {
 			copy.setAcquisitionDate(LocalDate.now());
 			copy.setRackCode(request.getRackCode());
 			if (location == null) {
-				Location locationDB = book.getCopies().getFirst().getLocation();
+				Location locationDB = book.getCopies().get(0).getLocation();
 				copy.setLocation(locationDB);
 			} else {
 				copy.setLocation(location);
