@@ -1,7 +1,8 @@
-package com.enigma.library_app.service;
+package com.enigma.library_app.service.impl;
 
 import com.enigma.library_app.model.User;
 import com.enigma.library_app.repository.UserRepository;
+import com.enigma.library_app.service.JwtService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

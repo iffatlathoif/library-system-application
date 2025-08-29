@@ -1,4 +1,4 @@
-package com.enigma.library_app.service;
+package com.enigma.library_app.service.impl;
 
 import com.enigma.library_app.exception.NotFoundException;
 import com.enigma.library_app.exception.UnauthorizedException;
@@ -12,6 +12,9 @@ import com.enigma.library_app.dto.auth.response.UserResponse;
 import com.enigma.library_app.model.Location;
 import com.enigma.library_app.repository.LocationRepository;
 import com.enigma.library_app.repository.UserRepository;
+import com.enigma.library_app.service.JwtService;
+import com.enigma.library_app.service.UserService;
+import com.enigma.library_app.service.ValidationService;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
